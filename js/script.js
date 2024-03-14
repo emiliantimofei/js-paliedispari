@@ -19,21 +19,21 @@ Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andia
 */
 
 
-// function isPalindrome(word) { // funzione (isPalindrome) prende una parola inserita quando la si evoca
-//     const lowerCaseWord = word.toLowerCase(); 
-//     // crea una costante (lowerCaseWord) che controlla la insensitività
-//     return lowerCaseWord === lowerCaseWord.split('').reverse().join('');
-//     /* 
-//     la funzione mi restituisce true se la parola è palindroma perchè prima con split la fa diventare un array contenente le lettere della parole inserite dall'utente, con reverse inverte l'ordine delle stesse ed infine join fa ritornare l'array in una stringa!
-//     */
-// }
+function isPalindrome(word) { // funzione (isPalindrome) prende una parola inserita quando la si evoca
+  const lowerCaseWord = word.toLowerCase(); 
+  // crea una costante (lowerCaseWord) che controlla la insensitività
+  return lowerCaseWord === lowerCaseWord.split('').reverse().join('');
+  /* 
+  la funzione mi restituisce true se la parola è palindroma perchè prima con split la fa diventare un array contenente le lettere della parole inserite dall'utente, con reverse inverte l'ordine delle stesse ed infine join fa ritornare l'array in una stringa!
+  */
+}
 
 
-// const parola = prompt('Inserisci una parola'); 
-// // variabile che prende il valore dell'utente con un prompt
+const parola = prompt('Inserisci una parola'); 
+// variabile che prende il valore dell'utente con un prompt
 
-// console.log(isPalindrome(parola));
-// // stampa di 0 o 1 del risultato della funzione isPalindrome
+console.log(isPalindrome(parola));
+// stampa di 0 o 1 del risultato della funzione isPalindrome
 
 
 // Funzione per generare un numero randomico 
